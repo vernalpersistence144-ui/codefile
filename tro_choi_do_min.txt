@@ -1,0 +1,41 @@
+C. Trò chơi Dò Mìn
+
+time limit per test: 1 second
+memory limit per test: 256 megabytes
+
+Trong một phiên bản tùy chỉnh của trò chơi Dò Mìn, người chơi biết trước vị trí của tất cả k quả bom trên một bảng gồm n hàng và m cột. Mỗi ô chứa nhiều nhất một quả bom.
+
+Nhiệm vụ của bạn là điền vào mỗi ô không chứa bom số lượng bom xuất hiện trong 8 ô xung quanh nó. Các ô chứa bom sẽ được đánh dấu bằng ký tự "B".
+
+Hãy in ra ma trận được tạo theo luật chơi này.
+
+Input
+Dòng đầu tiên chứa ba số nguyên n, m và k (1 <= n, m <= 500, 1 <= k <= n * m) — số hàng, số cột và số lượng bom.
+Trong k dòng tiếp theo, mỗi dòng chứa hai số nguyên r_i và s_i (1 <= r_i <= n, 1 <= s_i <= m) — vị trí hàng và cột của một quả bom.
+
+Output
+In ra n dòng, mỗi dòng gồm m ký tự hoặc số nguyên cách nhau bởi dấu cách — ma trận kết quả theo luật chơi.
+
+Examples
+input
+1 6 1
+1 3
+
+output
+0 1 B 1 0 0
+
+input
+3 3 3
+1 1
+2 3
+1 3
+
+output
+B 3 B
+1 3 B
+0 1 1
+
+Note
+- Subtask 1: n = 1.
+- Subtask 2: k = 1.
+- Subtask 3: Không có ràng buộc gì thêm.
