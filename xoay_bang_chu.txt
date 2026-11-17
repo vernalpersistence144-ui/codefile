@@ -1,0 +1,70 @@
+D. Xoay Bảng Chữ
+
+time limit per test: 1 second
+memory limit per test: 256 megabytes
+
+Cho một bảng chữ kích thước R × C gồm toàn các chữ cái thường, cần xoay bảng này K độ theo chiều kim đồng hồ.
+
+Việc xoay bảng theo các góc K là bội số của 45 (0 <= K <= 360) cần tuân theo đúng định dạng yêu cầu:
+- Sử dụng số dòng ít nhất có thể.
+- Mỗi dòng có thể chứa dấu cách ở đầu dòng.
+- Không được có dấu cách ở cuối dòng.
+
+Input
+Dòng đầu tiên chứa hai số nguyên R và C (1 <= R <= 10, 1 <= C <= 10).
+R dòng tiếp theo, mỗi dòng chứa đúng C chữ cái thường.
+Dòng cuối cùng chứa số nguyên K — góc xoay theo chiều kim đồng hồ, là bội số của 45 và thỏa mãn 0 <= K <= 360.
+
+Output
+In ra bảng chữ sau khi xoay K độ theo đúng định dạng yêu cầu.
+
+Examples
+Input
+3 5
+damir
+marko
+darko
+45
+
+Output
+  d
+ m a
+d a m
+ a r i
+  r k r
+   k o
+    o
+
+Input
+3 5
+damir
+marko
+darko
+90
+
+Output
+dmd
+aaa
+rrm
+kki
+oor
+
+Input
+5 5
+abcde
+bcdef
+cdefg
+defgh
+efghi
+315
+
+Output
+    e
+   d f
+  c e g
+ b d f h
+a c e g i
+ b d f h
+  c e g
+   d f
+    e
